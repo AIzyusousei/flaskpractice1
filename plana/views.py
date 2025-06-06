@@ -115,3 +115,7 @@ def employee_delete(id):
     db.session.delete(employee)  
     db.session.commit()  
     return redirect(url_for('employee_list'))
+
+@app.route('/aa')
+def aaa():
+    print("テスト")
